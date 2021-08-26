@@ -1,0 +1,9 @@
+html
+    body
+        each job in jobs
+            p
+            | #{job.company}
+            br
+            #{job.rate}
+            br
+            a(href=`${job.link}`) #{job.position}
